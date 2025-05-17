@@ -1,6 +1,7 @@
 package com.example.typingspeedgame;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
+
+import com.example.typingspeedgame.util.FontUtil;
 
 public class ScoreActivity extends AppCompatActivity {
     private TextView finalScoreTextView;
@@ -32,6 +36,11 @@ public class ScoreActivity extends AppCompatActivity {
         playAgainButton = findViewById(R.id.playAgainButton);
         homeButton = findViewById(R.id.homeButton);
         viewHistoryButton = findViewById(R.id.viewHistoryButton);
+
+        // set font
+        Typeface customFont = ResourcesCompat.getFont(this, R.font.press_start_to_play_regular);
+        View rootView = findViewById(android.R.id.content);
+        FontUtil.applyCustomFont(rootView, customFont);
 
         // Get data from intent
         Intent intent = getIntent();

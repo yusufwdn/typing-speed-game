@@ -2,6 +2,7 @@ package com.example.typingspeedgame;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -17,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.typingspeedgame.adapter.HistoryAdapter;
 import com.example.typingspeedgame.model.GameResult;
+import com.example.typingspeedgame.util.FontUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,6 +44,11 @@ public class HistoryActivity extends AppCompatActivity {
         emptyHistoryTextView = findViewById(R.id.emptyHistoryTextView);
         clearHistoryButton = findViewById(R.id.clearHistoryButton);
         homeButton = findViewById(R.id.homeButton);
+
+        // set font
+        Typeface customFont = ResourcesCompat.getFont(this, R.font.press_start_to_play_regular);
+        View rootView = findViewById(android.R.id.content);
+        FontUtil.applyCustomFont(rootView, customFont);
 
         // Set up RecyclerView
         historyRecyclerView.setLayoutManager(new LinearLayoutManager(this));

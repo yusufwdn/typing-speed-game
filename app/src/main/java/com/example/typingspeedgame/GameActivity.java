@@ -2,6 +2,7 @@ package com.example.typingspeedgame;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.KeyEvent;
@@ -14,8 +15,10 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import com.example.typingspeedgame.model.GameResult;
+import com.example.typingspeedgame.util.FontUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -57,6 +60,11 @@ public class GameActivity extends AppCompatActivity {
         wordInputEditText = findViewById(R.id.wordInputEditText);
         submitButton = findViewById(R.id.submitButton);
 
+        // set font
+        Typeface customFont = ResourcesCompat.getFont(this, R.font.press_start_to_play_regular);
+        View rootView = findViewById(android.R.id.content);
+        FontUtil.applyCustomFont(rootView, customFont);
+
         // initialize word list
         initializeWordList();
 
@@ -94,16 +102,26 @@ public class GameActivity extends AppCompatActivity {
 
     private void initializeWordList() {
         words = Arrays.asList(
-            "apple", "banana", "cherry", "date", "elderberry",
-            "fig", "grape", "honeydew", "kiwi", "lemon",
-            "mango", "nectarine", "orange", "papaya", "quince",
-            "raspberry", "strawberry", "tangerine", "watermelon",
-            "computer", "keyboard", "mouse", "monitor", "laptop",
-            "software", "hardware", "internet", "website", "program",
-            "algorithm", "database", "network", "server", "cloud",
-            "mobile", "application", "development", "coding", "testing",
-            "debug", "function", "variable", "constant", "loop",
-            "array", "string", "integer", "boolean", "object"
+            "Jakarta", "Tokyo", "London", "Paris", "New York",
+            "Beijing", "Moscow", "Sydney", "Toronto", "Berlin",
+            "Madrid", "Rome", "Seoul", "Bangkok", "Dubai",
+            "Kuala Lumpur", "Cairo", "Istanbul", "Mexico City", "Buenos Aires",
+            "Lima", "Nairobi", "Cape Town", "Hanoi", "Riyadh",
+            "Doha", "Amsterdam", "Vienna", "Oslo", "Copenhagen",
+            "Stockholm", "Helsinki", "Lisbon", "Prague", "Budapest",
+            "Warsaw", "Brussels", "Athens", "Zurich", "Dublin",
+            "Manila", "Taipei", "Tehran", "Baghdad", "Ankara",
+            "Karachi", "New Delhi", "Islamabad", "Colombo", "Kathmandu",
+            "Washington", "Ottawa", "Canberra", "Brasilia", "Santiago",
+            "Quito", "Caracas", "Havana", "San Juan", "San Jose",
+            "Panama City", "Montevideo", "Asuncion", "La Paz", "Sucre",
+            "Pretoria", "Accra", "Abuja", "Algiers", "Tripoli",
+            "Rabat", "Tunis", "Addis Ababa", "Khartoum", "Luanda",
+            "Kinshasa", "Harare", "Maputo", "Lusaka", "Antananarivo",
+            "Ulaanbaatar", "Tashkent", "Bishkek", "Ashgabat", "Dushanbe",
+            "Yerevan", "Tbilisi", "Baku", "Kabul", "Islamabad",
+            "Doha", "Manama", "Muscat", "Kuwait City", "Amman",
+            "Damascus", "Beirut", "Jerusalem", "Ramallah", "Sanaa"
         );
     }
 

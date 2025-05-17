@@ -12,7 +12,7 @@
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Typing Speed Game"
+        android:text="@string/app_name"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Game Rules"
+                android:text="@string/game_rules"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
@@ -58,34 +58,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Type the words shown on screen as quickly and accurately as possible."
+                android:text="@string/rules_1"
                 android:textSize="10sp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp" />
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. You have 60 seconds to type as many words as you can."
+                android:text="@string/rules_2"
                 android:textSize="10sp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp" />
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/rules_3"
                 android:textSize="10sp"
-                android:text="3. Your score is based on speed and accuracy."
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp" />
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/rules_4"
                 android:textSize="10sp"
-                android:text="4. Press Enter or tap Submit after each word."
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp" />
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

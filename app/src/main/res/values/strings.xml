@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">TypingSpeed Game</string>
+    <string name="app_name">Typing Speed Game</string>
+
+
+    <string name="game_rules">Game Rules</string>
+    <string name="rules_1">1. Type the words shown on screen as quickly and accurately as possible (no case sensitive)</string>
+    <string name="rules_2">2. You have 60 seconds to type as many words as you can.</string>
+    <string name="rules_3">3. Your score is based on speed and accuracy.</string>
+    <string name="rules_4">4. Press Enter or tap Submit after each word.</string>
 </resources>
