@@ -184,6 +184,8 @@ public class GameActivity extends AppCompatActivity {
         // Get existing history
         String historyJson = prefs.getString("HISTORY", "");
         List<GameResult> gameResults = GameResult.fromJsonString(historyJson);
+
+        // When result is null or empty, then assign an empty array list to gameResults variable
         if (gameResults == null) {
             gameResults = new ArrayList<>();
         }
