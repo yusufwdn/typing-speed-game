@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="P2PFontStyle">
+        <item name="android:fontFamily">@font/press_start_to_play_regular</item>
+    </style>
+</resources>
