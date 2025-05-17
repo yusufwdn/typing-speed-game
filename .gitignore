@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+*.dm
+output-metadata.json
+app/release/baselineProfiles/

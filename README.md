@@ -104,6 +104,6 @@ private void clearGameHistory() {
 
 ---
 
-Jika ingin mencoba file `.apk`-nya tanpa ribet clone, run, dan lainnya kamu bisa di sini. 
+Jika ingin mencoba file `.apk`-nya tanpa ribet clone, run, dan lainnya kamu bisa [di sini](/app/release/typingspeed.apk). 
 
 ˙✧˖°☕ ༘ ⋆｡˚ **ENJOY THIS LIFE, BE HAPPY** ˙✧˖°☕ ༘ ⋆｡˚
