@@ -610,6 +610,6 @@ public class HistoryActivity extends AppCompatActivity {
 ```
 
 
-Jika ingin mencoba file `.apk`-nya tanpa ribet clone, run, dan lainnya kamu bisa [di sini](/app/release/typingspeed.apk). 
+Jika ingin mencoba file `.apk`-nya tanpa ribet clone, run, dan lainnya kamu bisa [di sini](/app/release/app-release.apk). 
 
 ˙✧˖°☕ ༘ ⋆｡˚ **ENJOY THIS LIFE, BE HAPPY** ˙✧˖°☕ ༘ ⋆｡˚
