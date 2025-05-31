@@ -102,26 +102,12 @@ public class GameActivity extends AppCompatActivity {
 
     private void initializeWordList() {
         words = Arrays.asList(
-            "Jakarta", "Tokyo", "London", "Paris", "New York",
-            "Beijing", "Moscow", "Sydney", "Toronto", "Berlin",
-            "Madrid", "Rome", "Seoul", "Bangkok", "Dubai",
-            "Kuala Lumpur", "Cairo", "Istanbul", "Mexico City", "Buenos Aires",
-            "Lima", "Nairobi", "Cape Town", "Hanoi", "Riyadh",
-            "Doha", "Amsterdam", "Vienna", "Oslo", "Copenhagen",
-            "Stockholm", "Helsinki", "Lisbon", "Prague", "Budapest",
-            "Warsaw", "Brussels", "Athens", "Zurich", "Dublin",
-            "Manila", "Taipei", "Tehran", "Baghdad", "Ankara",
-            "Karachi", "New Delhi", "Islamabad", "Colombo", "Kathmandu",
-            "Washington", "Ottawa", "Canberra", "Brasilia", "Santiago",
-            "Quito", "Caracas", "Havana", "San Juan", "San Jose",
-            "Panama City", "Montevideo", "Asuncion", "La Paz", "Sucre",
-            "Pretoria", "Accra", "Abuja", "Algiers", "Tripoli",
-            "Rabat", "Tunis", "Addis Ababa", "Khartoum", "Luanda",
-            "Kinshasa", "Harare", "Maputo", "Lusaka", "Antananarivo",
-            "Ulaanbaatar", "Tashkent", "Bishkek", "Ashgabat", "Dushanbe",
-            "Yerevan", "Tbilisi", "Baku", "Kabul", "Islamabad",
-            "Doha", "Manama", "Muscat", "Kuwait City", "Amman",
-            "Damascus", "Beirut", "Jerusalem", "Ramallah", "Sanaa"
+            "apel", "pisang", "mangga", "semangka", "stroberi", "anggur", "jeruk", "kiwi", "nanas", "blueberry",
+            "kelapa", "delima", "pepaya", "sirsak", "markisa", "rambutan", "duku", "salak", "cempedak", "leci",
+            "kurma", "melon", "belimbing", "ceri", "alpukat", "plum", "pear", "kismis",
+            "gajah", "singa", "kucing", "anjing", "burung", "ikan", "harimau", "panda", "kangguru", "zebra",
+            "jerapah", "unta", "koala", "serigala", "kuda", "sapi", "ayam", "elang", "buaya", "beruang",
+            "monyet", "lumba-lumba", "hiu", "gurita", "kura-kura", "kelinci", "rubah", "babi hutan", "angsa", "cacing"
         );
     }
 
